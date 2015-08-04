@@ -14,6 +14,7 @@ class ScssCompass {
 	}
 
 	protected function updateImportPath() {
+        // also contao components: vendor/contao-components/compass/css
 		$this->scss->addImportPath(__DIR__ . "/stylesheets/");
 	}
 
