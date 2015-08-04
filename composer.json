@@ -1,7 +1,7 @@
 {
-    "name": "leafo/scssphp-compass",
+    "name": "comolo/php-scssphp-compass",
     "description": "Compass for scssphp",
-    "homepage": "http://leafo.net/scssphp/",
+    "homepage": "https://github.com/comolo/php-scssphp-compass",
     "require": {
         "leafo/scssphp": "~0.1"
     },
