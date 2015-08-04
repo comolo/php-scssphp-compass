@@ -7,12 +7,18 @@
     },
     "authors": [
         {
+            "name": "Hendrik Obermayer",
+            "homepage": "http://comolo.de"
+        },
+        {
             "name": "Leaf Corcoran",
             "email": "leafot@gmail.com",
             "homepage": "http://leafo.net"
         }
     ],
     "autoload": {
-        "classmap": ["compass.inc.php"]
+        "psr-4": {
+            "Comolo\\ScssCompass": "src/"
+        }
     }
 }

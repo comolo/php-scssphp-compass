@@ -1,6 +1,7 @@
 <?php
+namespace Comolo\ScssCompass;
 
-class scss_compass {
+class ScssCompass {
 	protected $libFunctions = array("lib_compact");
 	
 	static public $true = array("keyword", "true");
