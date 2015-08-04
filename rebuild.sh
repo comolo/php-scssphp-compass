@@ -25,4 +25,3 @@ for file in $(find "$STYLESHEETS" | grep scss$); do
 	fi
 done
 
-
