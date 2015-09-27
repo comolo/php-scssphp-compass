@@ -1,11 +1,11 @@
 <?php
 namespace Comolo\ScssCompass;
 
-class ScssCompassPlugin {
-	protected $libFunctions = array("lib_compact");
+class CompassPlugin {
+	protected $libFunctions = array('lib_compact');
 	
-	static public $true = array("keyword", "true");
-	static public $false = array("keyword", "false");
+	static public $true = array('keyword', 'true');
+	static public $false = array('keyword', 'false');
 
 	public function __construct($scss) {
 		$this->scss = $scss;
@@ -30,7 +30,7 @@ class ScssCompassPlugin {
 
 	public function lib_compact($args) {
 		list($list) = $args;
-		if ($list[0] != "list") return $list;
+		if ($list[0] != 'list') return $list;
 
 		$filtered = array();
 		foreach ($list[2] as $item) {
