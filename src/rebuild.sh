@@ -1,20 +1,23 @@
 #!/bin/sh
 
-STYLESHEETS="stylesheets"
+STYLESHEETS="./stylesheets"
 
 if [ -d compass ]; then
 	(
 		cd compass
-		git pull
+		git pull origin master
 	)
 else
-	git clone https://github.com/chriseppstein/compass.git
+	git clone -b stable https://github.com/chriseppstein/compass.git
 fi
 
 [ -d "$STYLESHEETS" ] && rm -r "$STYLESHEETS"
 mkdir "$STYLESHEETS"
 
-cp -r compass/frameworks/compass/stylesheets/* "$STYLESHEETS"
+
+cp -r compass/core/stylesheets/* "$STYLESHEETS"
+
+echo "ok";
 
 # rename all the files
 for file in $(find "$STYLESHEETS" | grep scss$); do
@@ -24,4 +27,3 @@ for file in $(find "$STYLESHEETS" | grep scss$); do
 		mv "$file" "$out"
 	fi
 done
-
